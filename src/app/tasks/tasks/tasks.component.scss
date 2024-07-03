@@ -1,0 +1,27 @@
+.board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      margin: 0;
+      padding: 10px;
+      background-color: gray;
+      color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  }
+}

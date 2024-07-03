@@ -49,11 +49,6 @@ export class AuthService {
     return this.httpClient.post<any>(this.apiURl + 'auth/token', {refreshToken});
   }
 
-  project() {
-    return this.httpClient.get(this.apiURl + 'project/all')
-  }
-
-
   isLoggedIn(): boolean {
     return !!this.accessToken;
   }

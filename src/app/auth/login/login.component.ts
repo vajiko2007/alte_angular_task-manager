@@ -63,7 +63,7 @@ export class LoginComponent {
           localStorage.setItem('user', JSON.stringify(user));
 
           alert("You have successfully logged in to your account!");
-          this.router.navigate(['']);
+          this.router.navigate(['projects']);
         },
       });
   }

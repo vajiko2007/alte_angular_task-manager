@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
-import {AuthService} from "../../services/auth.service";
 import {AsyncPipe, JsonPipe} from "@angular/common";
+import {ProjectService} from "../../services/project.service";
 
 @Component({
   selector: 'app-projects',
@@ -14,7 +14,8 @@ import {AsyncPipe, JsonPipe} from "@angular/common";
 })
 export class ProjectsComponent {
 
-  authService = inject(AuthService)
+  ProjectService = inject(ProjectService)
 
-  projects$ = this.authService.project()
+  projects$ = this.ProjectService.project()
+
 }
